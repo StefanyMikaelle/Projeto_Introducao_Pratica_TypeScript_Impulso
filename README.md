@@ -1,14 +1,14 @@
 ﻿# Projeto_Introducao_Pratica_TypeScript_Impulso
 
-1º Passo: Criar um projeto Node
+# 1º Passo: Criar um projeto Node
 - cria um novo terminal powershell
 -digita o comando no terminal npm init para criar um novo projeto node
 - clica em enter até finalizar e surgir a mesma linha de comando
-2º Passo: Instalar como dependência de desenvolvimento o TypeScript
+# 2º Passo: Instalar como dependência de desenvolvimento o TypeScript
 -digita o comando terminal npm install --save-dev typescript
-3º Passo: Instalar o lite-server
+# 3º Passo: Instalar o lite-server
 -digita o comando terminal npm install lite-server --save-dev
-4º Passo: Criar um script no arquivo package.json
+# 4º Passo: Criar um script no arquivo package.json
 - digita o comando   "start": "lite-server"
 Ficando dessa forma abaixo:
 {
@@ -26,7 +26,7 @@ Ficando dessa forma abaixo:
     "typescript": "^4.7.4"
   }
 }
-4º Passo: Criar um arquivo index.html
+# 4º Passo: Criar um arquivo index.html
 - digita o comando:
 <script src="app.js" defer ></script>
  para rodar o JS após o HTML o termo defer irá garantir isso.
@@ -56,7 +56,7 @@ Ficando dessa forma abaixo:
 </body>
 </html>
 
-5º Passo: Criar um arquivo app.js (Teste 1)
+# 5º Passo: Criar um arquivo app.js (Teste 1)
 - Faz o primeiro teste escrevendo no arquivo
 // Teste 1
 console.log("Estou vinculado ao index.html")
@@ -70,7 +70,7 @@ https://www.youtube.com/watch?v=LBTQA-esQc4
 https://www.youtube.com/watch?v=daneIkrlAZ4
 ### saiu o erro pelo que entendi esse erro é ficticio= dummy 
 SOLUCIONADO ESSE ERRO!
-6º Passo: Criar um arquivo app.js (Teste 2) - Aplicação de somar
+# 6º Passo: Criar um arquivo app.js (Teste 2) - Aplicação de somar
 //Teste 2
 let botao = document.getElementById("botao");
 let entrada1 = document.getElementById("entrada1");
@@ -87,7 +87,7 @@ botao.addEventListener ("click", ()  => {
 	console.log(somarNumeros(entrada1.value, entrada2.value));
 })
 ## renomeei arquivo para testes.js depois criei e coloquei na pasta exemplos
-7º Passo: Criar um arquivo app.ts (criar aplicação somar usando TypeScript)
+#7º Passo: Criar um arquivo app.ts (criar aplicação somar usando TypeScript)
 ## observação comentar tudo é: ctrl +K+C e descomentar é : ctrl +K+U
 - copiei o trecho abaixo:
 let botao = document.getElementById("botao");
@@ -119,7 +119,7 @@ if (botao){
 })
 
 }
-8º Passo: Abrir arquivo package.json (p/ atualizar o JavaScript)
+# 8º Passo: Abrir arquivo package.json (p/ atualizar o JavaScript)
 - digitar     tsc --watch no terminal powershell
 ** Esse comando é para sempre se atualize o JavaScript
 Então o código ficou dessa maneira abaixo:
@@ -165,7 +165,7 @@ if (botao){
 })
 
 }
-9º Passo: Fazendo novas mudanças no arquivo package.json 
+# 9º Passo: Fazendo novas mudanças no arquivo package.json 
 ** O que está em roxo são as alterações feitas
 let botao = document.getElementById("botao");
 let entrada1 = document.getElementById("entrada1") as HTMLInputElement;
@@ -191,7 +191,7 @@ if (botao){
 
 }
 - renomeei para teste2 e coloquei na pasta testes
-10º Passo: Fazendo segundo exemplo de TypeScript
+# 10º Passo: Fazendo segundo exemplo de TypeScript
 **O atalho Ctrl + barra mostra todas as opções que são esperadas que foram padronizadas  pela interface
 const pessoa = {
     nome : 'Stefany',
@@ -253,7 +253,7 @@ function listar(lista: string[]){
 }
 
 listar(melissa.materias);
-11º Passo: Fazendo terceiro  exemplo de TypeScript (ANY)
+# 11º Passo: Fazendo terceiro  exemplo de TypeScript (ANY)
 let valorQualquer : any;
 valorQualquer = 2;
 valorQualquer = "oi";
@@ -273,7 +273,7 @@ function somarString (string1: string, string2: string){
 somarString(valorString1,valorString2);
 somarString('Olá',' como vai?');
 
-12º Passo: Fazendo quarto  exemplo de TypeScript (Colocar mais de um tipo na entrada)
+# 12º Passo: Fazendo quarto  exemplo de TypeScript (Colocar mais de um tipo na entrada)
 // // Sugestão 1 p/ colocar mais de uma entrada
 
 // function somarValores (entrada1: number | string, entrada2: number | string){
@@ -301,7 +301,7 @@ function somarValores (entrada1: entrada, entrada2: entrada){
 console.log(somarValores(1 , 5));
 console.log(somarValores('Olá', ' como vai?'));
 console.log(somarValores("1" , 5));
-13º Passo: Fazendo quinto  exemplo de TypeScript (Colocar de erros void e never)
+# 13º Passo: Fazendo quinto  exemplo de TypeScript (Colocar de erros void e never)
 
 let  valorQualquerNovamente : any;
 valorQualquerNovamente = 3;
@@ -331,7 +331,7 @@ function jogaErro (erro: string, codigo: number ): void{
 }
 
 jogaErro('deu erro', 500 )
-14º Passo: Manipulação de bibliotecas e pastas
+# 14º Passo: Manipulação de bibliotecas e pastas
 - no arquivo app.ts
 // No tsconfig.json - "target": "es2016" - adapta para versoes anteriores
 // No tsconfig.json - "outDir": "arquivoJS" - cria pasta para arquivos JS 
